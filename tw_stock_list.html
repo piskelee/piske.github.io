@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h1>{{ title }}</h1>
+<div>
+    <table border="1">
+        <tr>
+            <th>股票編號</th>
+            <th>公司名稱</th>
+            <th>LOAD1</th>
+            <th>買賣資訊</th>
+        </tr>
+        {% for d in datas %}
+        <tr>
+            <td>{{ d["股票編號"] }}</td>
+            <td>{{ d["公司名稱"] }}</td>
+            <td>{{ d["LOAD1"] }}</td>
+            <td><a href="/daw_data/{{d["股票編號"]}}">查看詳情</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</div>
+
+</body>
+</html>
