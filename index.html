@@ -3,1289 +3,1130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>阿志三十日均價股票分析</title>
-    <style TYPE="text/css">
-        <!--
-        div{
+    <title>查看股票列表</title>
+        <style TYPE="text/css">
+        .s1{
             height: 500px;
             width: 600px;
             margin: 30px;
             float: left;
         }
-    </style>
+        </style>
 </head>
 <body>
-
-    <h1>台灣50 & 台灣中小企100為BASE，三十日均價股票分析</h1>
-
-    <hr>
-    <a href="http://127.0.0.1:5000/tw_stock_list">股票清單</a> /
-    <a href="http://127.0.0.1:5000/daw_data/0050">成交量資訊</a> /
-    <a href="http://127.0.0.1:5000/daw_data/0050">歷年配股配息</a>
-    <h2>
-        <ul>
-            <li>圖一：</li>
-            <li>橘 > 30日均線（觀查）</li>
-			<li>綠 > 10% 突破線（觀查）</li>
-			<li>紅 > 10% 跌破線（觀查）</li>
-			<li>現價上升 & 三線皆突破 > 入場時機（ALL IN？？）</li>
-		</ul>
-		<ul>
-            <li>圖二：</li>
-            <li>橘 > 5日均線（觀查）</li>
-			<li>綠 > 10日（觀查）</li>
-            <li>現價上升 & 橘線穿綠線 > 入場時機（ALL IN？？）</li>
-		</ul>
-	</h2>
-    <hr>
-    
-    <div>
-        <img src="static/ma30/0050.png" />
-    </div>
-    <div>
-        <img src="static/ma20/0050.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/0056.png" />
-    </div>
-    <div>
-        <img src="static/ma20/0056.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/00878.png" />
-    </div>
-    <div>
-        <img src="static/ma20/00878.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/00881.png" />
-    </div>
-    <div>
-        <img src="static/ma20/00881.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1101.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1101.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1102.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1102.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1210.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1210.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1216.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1216.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1227.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1227.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1229.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1229.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1301.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1301.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1303.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1303.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1326.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1326.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1402.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1402.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1476.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1476.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1477.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1477.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1504.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1504.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1590.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1590.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1604.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1604.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1605.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1605.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1717.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1717.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1722.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1722.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1802.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1802.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/1907.png" />
-    </div>
-    <div>
-        <img src="static/ma20/1907.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2002.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2002.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2027.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2027.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2049.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2049.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2059.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2059.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2101.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2101.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2105.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2105.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2201.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2201.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2207.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2207.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2227.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2227.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2233.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2233.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2301.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2301.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2303.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2303.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2308.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2308.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2313.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2313.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2317.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2317.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2324.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2324.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2327.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2327.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2330.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2330.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2337.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2337.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2344.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2344.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2345.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2345.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2347.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2347.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2352.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2352.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2353.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2353.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2354.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2354.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2356.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2356.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2357.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2357.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2360.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2360.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2376.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2376.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2377.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2377.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2379.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2379.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2382.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2382.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2383.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2383.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2385.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2385.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2395.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2395.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2404.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2404.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2408.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2408.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2409.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2409.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2412.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2412.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2436.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2436.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2441.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2441.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2449.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2449.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2454.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2454.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2458.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2458.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2474.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2474.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2492.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2492.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2542.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2542.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2603.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2603.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2606.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2606.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2609.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2609.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2610.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2610.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2615.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2615.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2618.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2618.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2633.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2633.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2801.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2801.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2809.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2809.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2812.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2812.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2823.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2823.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2834.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2834.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2845.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2845.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2850.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2850.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2881.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2881.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2882.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2882.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2883.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2883.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2884.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2884.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2885.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2885.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2886.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2886.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2887.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2887.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2888.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2888.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2889.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2889.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2890.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2890.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2891.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2891.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2892.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2892.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2912.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2912.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/2915.png" />
-    </div>
-    <div>
-        <img src="static/ma20/2915.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3005.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3005.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3006.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3006.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3008.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3008.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3023.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3023.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3034.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3034.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3037.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3037.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3044.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3044.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3045.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3045.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3189.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3189.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3231.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3231.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3406.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3406.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3443.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3443.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3481.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3481.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3532.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3532.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3533.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3533.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3576.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3576.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3653.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3653.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3661.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3661.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3665.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3665.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3682.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3682.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3702.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3702.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3706.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3706.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3711.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3711.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/3714.png" />
-    </div>
-    <div>
-        <img src="static/ma20/3714.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/4904.png" />
-    </div>
-    <div>
-        <img src="static/ma20/4904.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/4919.png" />
-    </div>
-    <div>
-        <img src="static/ma20/4919.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/4938.png" />
-    </div>
-    <div>
-        <img src="static/ma20/4938.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/4958.png" />
-    </div>
-    <div>
-        <img src="static/ma20/4958.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/5269.png" />
-    </div>
-    <div>
-        <img src="static/ma20/5269.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/5522.png" />
-    </div>
-    <div>
-        <img src="static/ma20/5522.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/5871.png" />
-    </div>
-    <div>
-        <img src="static/ma20/5871.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/5876.png" />
-    </div>
-    <div>
-        <img src="static/ma20/5876.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/5880.png" />
-    </div>
-    <div>
-        <img src="static/ma20/5880.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/6176.png" />
-    </div>
-    <div>
-        <img src="static/ma20/6176.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/6213.png" />
-    </div>
-    <div>
-        <img src="static/ma20/6213.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/6239.png" />
-    </div>
-    <div>
-        <img src="static/ma20/6239.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/6271.png" />
-    </div>
-    <div>
-        <img src="static/ma20/6271.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/6278.png" />
-    </div>
-    <div>
-        <img src="static/ma20/6278.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/6285.png" />
-    </div>
-    <div>
-        <img src="static/ma20/6285.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/6409.png" />
-    </div>
-    <div>
-        <img src="static/ma20/6409.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/6415.png" />
-    </div>
-    <div>
-        <img src="static/ma20/6415.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/6456.png" />
-    </div>
-    <div>
-        <img src="static/ma20/6456.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/6505.png" />
-    </div>
-    <div>
-        <img src="static/ma20/6505.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/6531.png" />
-    </div>
-    <div>
-        <img src="static/ma20/6531.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/6592.png" />
-    </div>
-    <div>
-        <img src="static/ma20/6592.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/6669.png" />
-    </div>
-    <div>
-        <img src="static/ma20/6669.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/8046.png" />
-    </div>
-    <div>
-        <img src="static/ma20/8046.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/8150.png" />
-    </div>
-    <div>
-        <img src="static/ma20/8150.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/8454.png" />
-    </div>
-    <div>
-        <img src="static/ma20/8454.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/8464.png" />
-    </div>
-    <div>
-        <img src="static/ma20/8464.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/9904.png" />
-    </div>
-    <div>
-        <img src="static/ma20/9904.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/9910.png" />
-    </div>
-    <div>
-        <img src="static/ma20/9910.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/9914.png" />
-    </div>
-    <div>
-        <img src="static/ma20/9914.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/9917.png" />
-    </div>
-    <div>
-        <img src="static/ma20/9917.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/9921.png" />
-    </div>
-    <div>
-        <img src="static/ma20/9921.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/9941.png" />
-    </div>
-    <div>
-        <img src="static/ma20/9941.png" />
-    </div>
-
-    
-    <div>
-        <img src="static/ma30/9945.png" />
-    </div>
-    <div>
-        <img src="static/ma20/9945.png" />
-    </div>
-
-    
+   <a href="http://127.0.0.1:5000/">首頁</a> /
+   <a href="http://127.0.0.1:5000/linecheck">線型熱門選股</a> /
+   <a href="http://127.0.0.1:5000/tw_stock_list">股票清單</a> /
+   <a href="http://127.0.0.1:5000/daw_data/0050">成交量資訊</a> /
+   <a href="http://127.0.0.1:5000/daw_data/0050">歷年配股配息</a>
+   <div class="content">
+       <h1>查看股票列表</h1>
+       <hr/>
+        
+    <div>
+        <table border="1">
+            <tr>
+                <th>股票編號</th>
+                <th>公司名稱</th>
+                <th>LOAD1</th>
+                <th>買賣資訊</th>
+            </tr>
+            
+            <tr>
+                <td>0050</td>
+                <td>台灣50</td>
+                <td>0</td>
+                <td><a href="/daw_data/0050">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>0056</td>
+                <td>元大高股息</td>
+                <td>0</td>
+                <td><a href="/daw_data/0056">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>00878</td>
+                <td>國泰永續高股息</td>
+                <td>0</td>
+                <td><a href="/daw_data/00878">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>00881</td>
+                <td>國泰台灣5G+</td>
+                <td>0</td>
+                <td><a href="/daw_data/00881">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1101</td>
+                <td>台泥</td>
+                <td>0</td>
+                <td><a href="/daw_data/1101">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1102</td>
+                <td>亞泥</td>
+                <td>0</td>
+                <td><a href="/daw_data/1102">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1210</td>
+                <td>大成</td>
+                <td>0</td>
+                <td><a href="/daw_data/1210">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1216</td>
+                <td>統一</td>
+                <td>0</td>
+                <td><a href="/daw_data/1216">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1227</td>
+                <td>佳格</td>
+                <td>0</td>
+                <td><a href="/daw_data/1227">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1229</td>
+                <td>聯華</td>
+                <td>0</td>
+                <td><a href="/daw_data/1229">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1301</td>
+                <td>台塑</td>
+                <td>0</td>
+                <td><a href="/daw_data/1301">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1303</td>
+                <td>南亞</td>
+                <td>0</td>
+                <td><a href="/daw_data/1303">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1326</td>
+                <td>台化</td>
+                <td>0</td>
+                <td><a href="/daw_data/1326">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1402</td>
+                <td>遠東新</td>
+                <td>0</td>
+                <td><a href="/daw_data/1402">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1476</td>
+                <td>儒鴻</td>
+                <td>0</td>
+                <td><a href="/daw_data/1476">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1477</td>
+                <td>聚陽</td>
+                <td>0</td>
+                <td><a href="/daw_data/1477">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1504</td>
+                <td>東元</td>
+                <td>0</td>
+                <td><a href="/daw_data/1504">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1590</td>
+                <td>亞德客-KY</td>
+                <td>0</td>
+                <td><a href="/daw_data/1590">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1604</td>
+                <td>聲寶</td>
+                <td>0</td>
+                <td><a href="/daw_data/1604">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1605</td>
+                <td>華新</td>
+                <td>0</td>
+                <td><a href="/daw_data/1605">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1717</td>
+                <td>長興</td>
+                <td>0</td>
+                <td><a href="/daw_data/1717">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1722</td>
+                <td>台肥</td>
+                <td>0</td>
+                <td><a href="/daw_data/1722">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1802</td>
+                <td>台玻</td>
+                <td>0</td>
+                <td><a href="/daw_data/1802">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>1907</td>
+                <td>永豐餘</td>
+                <td>0</td>
+                <td><a href="/daw_data/1907">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2002</td>
+                <td>中鋼</td>
+                <td>0</td>
+                <td><a href="/daw_data/2002">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2027</td>
+                <td>大成鋼</td>
+                <td>0</td>
+                <td><a href="/daw_data/2027">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2049</td>
+                <td>上銀</td>
+                <td>0</td>
+                <td><a href="/daw_data/2049">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2059</td>
+                <td>川湖</td>
+                <td>0</td>
+                <td><a href="/daw_data/2059">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2101</td>
+                <td>南港</td>
+                <td>0</td>
+                <td><a href="/daw_data/2101">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2105</td>
+                <td>正新</td>
+                <td>0</td>
+                <td><a href="/daw_data/2105">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2201</td>
+                <td>裕隆</td>
+                <td>0</td>
+                <td><a href="/daw_data/2201">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2207</td>
+                <td>和泰車</td>
+                <td>0</td>
+                <td><a href="/daw_data/2207">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2227</td>
+                <td>裕日車</td>
+                <td>0</td>
+                <td><a href="/daw_data/2227">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2233</td>
+                <td>宇隆</td>
+                <td>0</td>
+                <td><a href="/daw_data/2233">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2301</td>
+                <td>光寶科</td>
+                <td>0</td>
+                <td><a href="/daw_data/2301">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2303</td>
+                <td>聯電</td>
+                <td>0</td>
+                <td><a href="/daw_data/2303">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2308</td>
+                <td>台達電</td>
+                <td>0</td>
+                <td><a href="/daw_data/2308">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2313</td>
+                <td>華通</td>
+                <td>0</td>
+                <td><a href="/daw_data/2313">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2317</td>
+                <td>鴻海</td>
+                <td>0</td>
+                <td><a href="/daw_data/2317">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2324</td>
+                <td>仁寶</td>
+                <td>0</td>
+                <td><a href="/daw_data/2324">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2327</td>
+                <td>國巨</td>
+                <td>0</td>
+                <td><a href="/daw_data/2327">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2330</td>
+                <td>台積電</td>
+                <td>0</td>
+                <td><a href="/daw_data/2330">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2337</td>
+                <td>旺宏</td>
+                <td>0</td>
+                <td><a href="/daw_data/2337">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2344</td>
+                <td>華邦電</td>
+                <td>0</td>
+                <td><a href="/daw_data/2344">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2345</td>
+                <td>智邦</td>
+                <td>0</td>
+                <td><a href="/daw_data/2345">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2347</td>
+                <td>聯強</td>
+                <td>0</td>
+                <td><a href="/daw_data/2347">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2352</td>
+                <td>佳世達</td>
+                <td>0</td>
+                <td><a href="/daw_data/2352">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2353</td>
+                <td>宏碁</td>
+                <td>0</td>
+                <td><a href="/daw_data/2353">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2354</td>
+                <td>鴻準</td>
+                <td>0</td>
+                <td><a href="/daw_data/2354">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2356</td>
+                <td>英業達</td>
+                <td>0</td>
+                <td><a href="/daw_data/2356">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2357</td>
+                <td>華碩</td>
+                <td>0</td>
+                <td><a href="/daw_data/2357">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2360</td>
+                <td>致茂</td>
+                <td>0</td>
+                <td><a href="/daw_data/2360">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2376</td>
+                <td>技嘉</td>
+                <td>0</td>
+                <td><a href="/daw_data/2376">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2377</td>
+                <td>微星</td>
+                <td>0</td>
+                <td><a href="/daw_data/2377">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2379</td>
+                <td>瑞昱</td>
+                <td>0</td>
+                <td><a href="/daw_data/2379">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2382</td>
+                <td>廣達</td>
+                <td>0</td>
+                <td><a href="/daw_data/2382">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2383</td>
+                <td>台光電</td>
+                <td>0</td>
+                <td><a href="/daw_data/2383">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2385</td>
+                <td>群光</td>
+                <td>0</td>
+                <td><a href="/daw_data/2385">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2395</td>
+                <td>研華</td>
+                <td>0</td>
+                <td><a href="/daw_data/2395">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2404</td>
+                <td>漢唐</td>
+                <td>0</td>
+                <td><a href="/daw_data/2404">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2408</td>
+                <td>南亞科</td>
+                <td>0</td>
+                <td><a href="/daw_data/2408">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2409</td>
+                <td>友達</td>
+                <td>0</td>
+                <td><a href="/daw_data/2409">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2412</td>
+                <td>中華電</td>
+                <td>0</td>
+                <td><a href="/daw_data/2412">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2436</td>
+                <td>偉詮電</td>
+                <td>0</td>
+                <td><a href="/daw_data/2436">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2441</td>
+                <td>超豐</td>
+                <td>0</td>
+                <td><a href="/daw_data/2441">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2449</td>
+                <td>京元電子</td>
+                <td>0</td>
+                <td><a href="/daw_data/2449">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2454</td>
+                <td>聯發科</td>
+                <td>0</td>
+                <td><a href="/daw_data/2454">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2458</td>
+                <td>義隆</td>
+                <td>0</td>
+                <td><a href="/daw_data/2458">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2474</td>
+                <td>可成</td>
+                <td>0</td>
+                <td><a href="/daw_data/2474">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2492</td>
+                <td>華新科</td>
+                <td>0</td>
+                <td><a href="/daw_data/2492">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2542</td>
+                <td>興富發</td>
+                <td>0</td>
+                <td><a href="/daw_data/2542">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2603</td>
+                <td>長榮</td>
+                <td>0</td>
+                <td><a href="/daw_data/2603">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2606</td>
+                <td>裕民</td>
+                <td>0</td>
+                <td><a href="/daw_data/2606">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2609</td>
+                <td>陽明</td>
+                <td>0</td>
+                <td><a href="/daw_data/2609">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2610</td>
+                <td>華航</td>
+                <td>0</td>
+                <td><a href="/daw_data/2610">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2615</td>
+                <td>萬海</td>
+                <td>0</td>
+                <td><a href="/daw_data/2615">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2618</td>
+                <td>長榮航</td>
+                <td>0</td>
+                <td><a href="/daw_data/2618">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2633</td>
+                <td>台灣高鐵</td>
+                <td>0</td>
+                <td><a href="/daw_data/2633">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2801</td>
+                <td>彰銀</td>
+                <td>0</td>
+                <td><a href="/daw_data/2801">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2809</td>
+                <td>京城銀</td>
+                <td>0</td>
+                <td><a href="/daw_data/2809">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2812</td>
+                <td>台中銀</td>
+                <td>0</td>
+                <td><a href="/daw_data/2812">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2823</td>
+                <td>中壽</td>
+                <td>0</td>
+                <td><a href="/daw_data/2823">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2834</td>
+                <td>臺企銀</td>
+                <td>0</td>
+                <td><a href="/daw_data/2834">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2845</td>
+                <td>遠東銀</td>
+                <td>0</td>
+                <td><a href="/daw_data/2845">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2850</td>
+                <td>新產</td>
+                <td>0</td>
+                <td><a href="/daw_data/2850">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2881</td>
+                <td>富邦金</td>
+                <td>0</td>
+                <td><a href="/daw_data/2881">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2882</td>
+                <td>國泰金</td>
+                <td>0</td>
+                <td><a href="/daw_data/2882">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2883</td>
+                <td>開發金</td>
+                <td>0</td>
+                <td><a href="/daw_data/2883">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2884</td>
+                <td>玉山金</td>
+                <td>0</td>
+                <td><a href="/daw_data/2884">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2885</td>
+                <td>元大金</td>
+                <td>0</td>
+                <td><a href="/daw_data/2885">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2886</td>
+                <td>兆豐金</td>
+                <td>0</td>
+                <td><a href="/daw_data/2886">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2887</td>
+                <td>台新金</td>
+                <td>0</td>
+                <td><a href="/daw_data/2887">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2888</td>
+                <td>新光金</td>
+                <td>0</td>
+                <td><a href="/daw_data/2888">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2889</td>
+                <td>國票金</td>
+                <td>0</td>
+                <td><a href="/daw_data/2889">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2890</td>
+                <td>永豐金</td>
+                <td>0</td>
+                <td><a href="/daw_data/2890">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2891</td>
+                <td>中信金</td>
+                <td>0</td>
+                <td><a href="/daw_data/2891">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2892</td>
+                <td>第一金</td>
+                <td>0</td>
+                <td><a href="/daw_data/2892">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2912</td>
+                <td>統一超</td>
+                <td>0</td>
+                <td><a href="/daw_data/2912">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>2915</td>
+                <td>潤泰全</td>
+                <td>0</td>
+                <td><a href="/daw_data/2915">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3005</td>
+                <td>神基</td>
+                <td>0</td>
+                <td><a href="/daw_data/3005">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3006</td>
+                <td>晶豪科</td>
+                <td>0</td>
+                <td><a href="/daw_data/3006">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3008</td>
+                <td>大立光</td>
+                <td>0</td>
+                <td><a href="/daw_data/3008">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3023</td>
+                <td>信邦</td>
+                <td>0</td>
+                <td><a href="/daw_data/3023">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3034</td>
+                <td>聯詠</td>
+                <td>0</td>
+                <td><a href="/daw_data/3034">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3037</td>
+                <td>欣興</td>
+                <td>0</td>
+                <td><a href="/daw_data/3037">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3044</td>
+                <td>健鼎</td>
+                <td>0</td>
+                <td><a href="/daw_data/3044">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3045</td>
+                <td>台灣大</td>
+                <td>0</td>
+                <td><a href="/daw_data/3045">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3189</td>
+                <td>景碩</td>
+                <td>0</td>
+                <td><a href="/daw_data/3189">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3231</td>
+                <td>緯創</td>
+                <td>0</td>
+                <td><a href="/daw_data/3231">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3406</td>
+                <td>玉晶光</td>
+                <td>0</td>
+                <td><a href="/daw_data/3406">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3443</td>
+                <td>創意</td>
+                <td>0</td>
+                <td><a href="/daw_data/3443">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3481</td>
+                <td>群創</td>
+                <td>0</td>
+                <td><a href="/daw_data/3481">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3532</td>
+                <td>台勝科</td>
+                <td>0</td>
+                <td><a href="/daw_data/3532">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3533</td>
+                <td>嘉澤</td>
+                <td>0</td>
+                <td><a href="/daw_data/3533">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3576</td>
+                <td>聯合再生</td>
+                <td>0</td>
+                <td><a href="/daw_data/3576">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3653</td>
+                <td>健策</td>
+                <td>0</td>
+                <td><a href="/daw_data/3653">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3661</td>
+                <td>世芯-KY</td>
+                <td>0</td>
+                <td><a href="/daw_data/3661">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3665</td>
+                <td>貿聯-KY</td>
+                <td>0</td>
+                <td><a href="/daw_data/3665">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3682</td>
+                <td>亞太電</td>
+                <td>0</td>
+                <td><a href="/daw_data/3682">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3702</td>
+                <td>大聯大</td>
+                <td>0</td>
+                <td><a href="/daw_data/3702">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3706</td>
+                <td>神達</td>
+                <td>0</td>
+                <td><a href="/daw_data/3706">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3711</td>
+                <td>日月光投控</td>
+                <td>0</td>
+                <td><a href="/daw_data/3711">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>3714</td>
+                <td>富采</td>
+                <td>0</td>
+                <td><a href="/daw_data/3714">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>4904</td>
+                <td>遠傳</td>
+                <td>0</td>
+                <td><a href="/daw_data/4904">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>4919</td>
+                <td>新唐</td>
+                <td>0</td>
+                <td><a href="/daw_data/4919">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>4938</td>
+                <td>和碩</td>
+                <td>0</td>
+                <td><a href="/daw_data/4938">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>4958</td>
+                <td>臻鼎-KY</td>
+                <td>0</td>
+                <td><a href="/daw_data/4958">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>5269</td>
+                <td>祥碩</td>
+                <td>0</td>
+                <td><a href="/daw_data/5269">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>5522</td>
+                <td>遠雄</td>
+                <td>0</td>
+                <td><a href="/daw_data/5522">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>5871</td>
+                <td>中租-KY</td>
+                <td>0</td>
+                <td><a href="/daw_data/5871">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>5876</td>
+                <td>上海商銀</td>
+                <td>0</td>
+                <td><a href="/daw_data/5876">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>5880</td>
+                <td>合庫金</td>
+                <td>0</td>
+                <td><a href="/daw_data/5880">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>6176</td>
+                <td>瑞儀</td>
+                <td>0</td>
+                <td><a href="/daw_data/6176">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>6213</td>
+                <td>聯茂</td>
+                <td>0</td>
+                <td><a href="/daw_data/6213">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>6239</td>
+                <td>力成</td>
+                <td>0</td>
+                <td><a href="/daw_data/6239">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>6271</td>
+                <td>同欣電</td>
+                <td>0</td>
+                <td><a href="/daw_data/6271">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>6278</td>
+                <td>台表科</td>
+                <td>0</td>
+                <td><a href="/daw_data/6278">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>6285</td>
+                <td>啟碁</td>
+                <td>0</td>
+                <td><a href="/daw_data/6285">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>6409</td>
+                <td>旭隼</td>
+                <td>0</td>
+                <td><a href="/daw_data/6409">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>6415</td>
+                <td>矽力-KY</td>
+                <td>0</td>
+                <td><a href="/daw_data/6415">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>6456</td>
+                <td>GIS-KY</td>
+                <td>0</td>
+                <td><a href="/daw_data/6456">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>6505</td>
+                <td>台塑化</td>
+                <td>0</td>
+                <td><a href="/daw_data/6505">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>6531</td>
+                <td>愛普</td>
+                <td>0</td>
+                <td><a href="/daw_data/6531">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>6592</td>
+                <td>和潤企業</td>
+                <td>0</td>
+                <td><a href="/daw_data/6592">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>6669</td>
+                <td>緯穎</td>
+                <td>0</td>
+                <td><a href="/daw_data/6669">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>8046</td>
+                <td>南電</td>
+                <td>0</td>
+                <td><a href="/daw_data/8046">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>8150</td>
+                <td>南茂</td>
+                <td>0</td>
+                <td><a href="/daw_data/8150">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>8454</td>
+                <td>富邦媒</td>
+                <td>0</td>
+                <td><a href="/daw_data/8454">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>8464</td>
+                <td>億豐</td>
+                <td>0</td>
+                <td><a href="/daw_data/8464">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>9904</td>
+                <td>寶成</td>
+                <td>0</td>
+                <td><a href="/daw_data/9904">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>9910</td>
+                <td>豐泰</td>
+                <td>0</td>
+                <td><a href="/daw_data/9910">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>9914</td>
+                <td>美利達</td>
+                <td>0</td>
+                <td><a href="/daw_data/9914">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>9917</td>
+                <td>中保科</td>
+                <td>0</td>
+                <td><a href="/daw_data/9917">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>9921</td>
+                <td>巨大</td>
+                <td>0</td>
+                <td><a href="/daw_data/9921">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>9941</td>
+                <td>裕融</td>
+                <td>0</td>
+                <td><a href="/daw_data/9941">查看詳情</a></td>
+            </tr>
+            
+            <tr>
+                <td>9945</td>
+                <td>潤泰新</td>
+                <td>0</td>
+                <td><a href="/daw_data/9945">查看詳情</a></td>
+            </tr>
+            
+        </table>
+    </div>
+    
+   </div>
 </body>
 </html>
